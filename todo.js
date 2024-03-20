@@ -8,7 +8,6 @@ if (age <= 0) {
 }
 
 let skipMessage = confirm("Do you want to skip the welcoming message?");
-
 if (gender.toLowerCase() === "male") {
     if (skipMessage) {
         alert("Welcome, " + name + ".");
