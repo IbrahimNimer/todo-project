@@ -17,6 +17,9 @@ function YesOrNoQuestion(question) {
     return answer;
 }
 
+
+
+
 // Function to store answers in an array and print them to the console
 function storeAnswers() {
     const questions = [
