@@ -7,6 +7,25 @@ if (age <= 0) {
     alert("Age should be greater than zero.");
 }
 
+let skipMessage = confirm("Do you want to skip the welcoming message?");
+
+if (gender.toLowerCase() === "male") {
+    if (skipMessage) {
+        alert("Welcome, " + name + ".");
+    } else {
+        alert("Welcome, Mr. " + name + ".");
+    }
+} else if (gender.toLowerCase() === "female") {
+    if (skipMessage) {
+        alert("Welcome, " + name + ".");
+    } else {
+        alert("Welcome, Ms. " + name + ".");
+    }
+} else {
+    alert("Welcome, " + name + ".");
+}
+
+
 // Function to ask a Yes/No question and return the user's answer
 function YesOrNoQuestion(question) {
     let answer = prompt(question + " (Yes/No)").trim().toLowerCase();
